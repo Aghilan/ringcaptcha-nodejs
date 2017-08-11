@@ -1,0 +1,27 @@
+{
+  "name": "ringcaptcha-nodejs",
+  "version": "0.0.1",
+  "description": "Integration ringcaptcha in your Node.js Application",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Abhishek sharma",
+  "license": "MIT",
+  "dependencies": {
+    "sha1": "^1.1.1",
+    "unirest": "^0.5.1",
+    "xml2json": "^0.11.0"
+  },
+  "repository": {
+  "type": "git",
+  "url": "https://github.com/abhi1122/ringcaptcha-nodejs"
+
+},
+"keywords": [
+    "bigbluebutton",
+    "bbb",
+    "nodejs-bigbluebutton",
+    "npm-bigbluebutton"
+  ]
+}
