@@ -16,7 +16,7 @@ ringcaptcha.secret_key = ''; //Add Your Secret Key
 
 ### Sending a PIN Code 
 - `mobile :- REQUIRED - Phone number in international format as described in E.123. It also accepts a comma-separated list of phones for multiple verifications.`
-- `country :- REQUIRED - Country Code`
+- `country_code :- REQUIRED - Country Code`
 - `service :- REQUIRED - Service to use when sending the PIN code. Availables are: SMS, Voice`
 
 ```js
@@ -29,7 +29,7 @@ console.log(response);
 
 ### Resend a PIN Code 
 - `mobile :- REQUIRED - Phone number in international format as described in E.123. It also accepts a comma-separated list of phones for multiple verifications.`
-- `country :- REQUIRED - Country Code`
+- `country_code :- REQUIRED - Country Code`
 - `service :- REQUIRED - Service to use when sending the PIN code. Availables are: SMS, Voice`
 
 ```js
@@ -44,7 +44,7 @@ console.log(response);
 - `mobile :- REQUIRED - Phone number in international format as described in E.123. It also accepts a comma-separated list of phones for multiple verifications.`
 - `code :- REQUIRED - The 4 digit PIN code to verify with the one sent in the code endpoint`
 - `token :- REQUIRED - The token received by the code endpoint when requesting a PIN code to be sent. Either this parameter or phone must be sent.`
-
+- `country_code :- REQUIRED - Country Code`
 ```js
 data = {mobile: 'XXXXX', country_code: '+91',token:'XXXXX',code:'XXXXXX'}
 ringcaptcha.verifyingPin(data, function (response) {
@@ -52,7 +52,25 @@ console.log(response);
 });
 ```
 
+### SMS Gateway 
+- `mobile :- REQUIRED - Phone number in international format as described in E.123. It also accepts a comma-separated list of phones for multiple verifications.`
+- `message :- REQUIRED - The message to send inside the SMS content. The message will automatically be split in 160 chars of ASCII or 70 chars UTF-8 (7-byte encoding)`
+- `country_code :- REQUIRED - Country Code`
+```js
+data = {mobile: 'XXXXX', country_code: '+91',code:'XXXXXX'}
+ringcaptcha.sendMessage(data, function (response) {
+console.log(response);
+});
+```
 
+### Phone Number Information
+- `mobile :- Phone number in international format.`
+```js
+data = {mobile: 'XXXXX'}
+ringcaptcha.phoneNumberInformation(data, function (response) {
+console.log(response);
+});
+```
 
 
 
