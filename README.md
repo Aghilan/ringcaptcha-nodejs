@@ -34,7 +34,7 @@ console.log(response);
 
 ```js
 data = {mobile: 'XXXXX', country_code: '+91',service:'SMS'}
-ringcaptcha.sendingPINCode(data, function (response) {
+ringcaptcha.reSendPINCode(data, function (response) {
 console.log(response);
 });
 ```
