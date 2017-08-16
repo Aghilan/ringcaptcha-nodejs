@@ -6,7 +6,7 @@
 $ npm install ringcaptcha-nodejs --save 
 ```
 
-### Config Ringcaptcha
+### Usage Ringcaptcha
 ```js
 var ringcaptcha = require('ringcaptcha-nodejs');
 ringcaptcha.app_key = '';//Add Your App Key
