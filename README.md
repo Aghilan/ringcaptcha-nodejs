@@ -57,7 +57,7 @@ console.log(response);
 - `message :- REQUIRED - The message to send inside the SMS content. The message will automatically be split in 160 chars of ASCII or 70 chars UTF-8 (7-byte encoding)`
 - `country_code :- REQUIRED - Country Code`
 ```js
-data = {mobile: 'XXXXX', country_code: '+91',code:'XXXXXX'}
+data = {mobile: 'XXXXX', country_code: '+91',message:'XXXXXX'}
 ringcaptcha.sendMessage(data, function (response) {
 console.log(response);
 });

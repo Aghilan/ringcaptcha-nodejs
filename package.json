@@ -1,6 +1,6 @@
 {
   "name": "ringcaptcha-nodejs",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Integration ringcaptcha in your Node.js Application",
   "main": "index.js",
   "scripts": {
